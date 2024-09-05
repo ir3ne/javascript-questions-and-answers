@@ -28,7 +28,7 @@ In writing the answers I was helped by AI and the book "JavaScript: The Definiti
 |10. [What is a closure?](#what-is-a-closure?)|
 |11. [What does it mean that JavaScript has First-class functions?](#what-does-it-mean-that-javascript-has-first-class-functions?)|
 |12. [What is a higher-order function?](#what-is-a-higher-order-function?)|
-|13. [Are concepts of higher-class function and closure connected?](#are-concepts-of-higher-class-function-and-closure-connected?)|
+|13. [Are concepts of higher-order function and closure connected?](#are-concepts-of-higher-order-function-and-closure-connected?)|
 |14. [What is the difference between arrow functions and the regular functions?](#what-is-the-difference-between-arrow-functions-and-the-regular-functions?)|
 |15. [What is the difference between call, apply and bind?](#what-is-the-difference-between-call,-apply-and-bind?)|
 |16. [What is a proxy and what are some practical uses?](#what-is-a-proxy-and-what-are-some-practical-uses?)|
@@ -847,9 +847,9 @@ Higher-order functions are a fundamental concept in functional programming and a
 
 ---
 
-<a name="are-concepts-of-higher-class-function-and-closure-connected?"></a>
+<a name="are-concepts-of-higher-order-function-and-closure-connected?"></a>
 
-## 13. Are concepts of higher-class function and closure connected?
+## 13. Are concepts of higher-order function and closure connected?
 
 Yes, in JavaScript, the concepts of higher-order functions and closures are closely connected and often go hand in hand.
 
