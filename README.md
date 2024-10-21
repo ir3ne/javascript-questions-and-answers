@@ -56,10 +56,10 @@ In writing the answers I was helped by AI and the book "JavaScript: The Definiti
 |38. [What is IndexedDB?](#what-is-indexeddb?)|
 |39. [What is a module?](#what-is-a-module?)|
 |40. [What is a Web API?](#what-is-a-web-api?)|
-|41. [How Does Destructuring Work in JavaScript, and What Are Its Use Cases?](#How-Does-Destructuring-Work-in-JavaScript-and-What-Are-Its-Use-Cases?)|
-|42. [What Are Template Literals, and How Do They Differ from String Concatenation?](#What-Are-Template-Literals-and-How-Do-They-Differ-from-String-Concatenation?)|
-|43. [Understanding the Difference Between event.preventDefault() and event.stopPropagation() in JavaScript](#Understanding-the-Difference-Between-event.preventDefault()-and-event.stopPropagation()-in-JavaScript)|
-|44. [Understanding Microtasks vs. Macrotasks in JavaScript](#Understanding-Microtasks-vs.-Macrotasks-in-JavaScript)|
+|41. [How does destructuring work in javascript, and what are its use cases?](#how-does-destructuring-work-in-javascript-and-what-are-its-use-cases?)|
+|42. [What are template literals, and how do they differ from string concatenation?](#what-are-template-literals-and-how-do-they-differ-from-string-concatenation?)|
+|43. [Understanding the difference between event.preventDefault() and event.stopPropagation() in JavaScript](#understanding-the-difference-between-eventpreventdefault-and-eventstoppropagation-in-javascript)|
+|44. [Understanding microtasks vs. macrotasks in JavaScript](#understanding-microtasks-vs-macrotasks-in-javascript)|
 ---
 
 <a name="what-is-javascript-and-what-is-the-meaning-of-interpreted-language?"></a>
@@ -2744,7 +2744,7 @@ Web APIs are commonly used for various purposes, such as accessing data from ext
 
 ---
 
-<a name="How-Does-Destructuring-Work-in-JavaScript-and-What-Are-Its-Use-Cases?"></a>
+<a name="how-does-destructuring-work-in-javascript-and-what-are-its-use-cases?"></a>
 
 ## How Does Destructuring Work in JavaScript, and What Are Its Use Cases?
 
@@ -2807,9 +2807,9 @@ Understanding this difference helps when you're trying to figure out why some pa
 
 ---
 
-<a name="What-Are-Template-Literals-and-How-Do-They-Differ-from-String-Concatenation?"></a>
+<a name="what-are-template-literals-and-how-do-they-differ-from-string-concatenation?"></a>
 
-## What Are Template Literals, and How Do They Differ from String Concatenation?
+## What are template literals, and how do they differ from string concatenation?
 
 Imagine you need to write a sentence using pieces of information that change, like someone's name or age. In programming, you use "strings" to represent text, but how you put those pieces together can be done in different ways. Two common methods for doing this in JavaScript are **template literals** and **string concatenation**. Let’s dive in and see what these are, and how they’re different from each other.
 
@@ -2868,9 +2868,9 @@ So next time you’re writing some JavaScript and need to create a message, give
 
 ---
 
-<a name="Understanding-the-Difference-Between-event.preventDefault()-and-event.stopPropagation()-in-JavaScript"></a>
+<a name="understanding-the-difference-between-eventpreventdefault-and-eventstoppropagation-in-javascript"></a>
 
-## Understanding the Difference Between event.preventDefault() and event.stopPropagation() in JavaScript
+## Understanding the difference between event.preventDefault() and event.stopPropagation() in JavaScript
 
 JavaScript is used to make websites interactive, and it often has to respond to different actions a user takes, like clicking a button or filling out a form. To do this, JavaScript listens to "events" on a webpage, and sometimes developers use special commands to control these events. Two of those commands are **event.preventDefault()** and **event.stopPropagation()**. Although they sound similar, they do different things. Let's explore each one!
 
@@ -2911,9 +2911,9 @@ Knowing the difference between these two commands can help you better control ho
 
 ---
 
-<a name="Understanding-Microtasks-vs.-Macrotasks-in-JavaScript"></a>
+<a name="understanding-microtasks-vs.-macrotasks-in-javascript"></a>
 
-## Understanding Microtasks vs. Macrotasks in JavaScript
+## Understanding microtasks vs. macrotasks in JavaScript
 
 When you're writing code in JavaScript, you might have to deal with how things happen in the background—which is called "asynchronous" behavior. JavaScript uses something called an **event loop** to manage how and when different parts of code get executed. The event loop decides the order in which things happen, and here is where we meet two important types of tasks: **microtasks** and **macrotasks**. Let’s explore the differences between them!
 
