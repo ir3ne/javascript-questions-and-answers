@@ -2746,7 +2746,7 @@ Web APIs are commonly used for various purposes, such as accessing data from ext
 
 <a name="how-does-destructuring-work-in-javascript-and-what-are-its-use-cases?"></a>
 
-## How Does Destructuring Work in JavaScript, and What Are Its Use Cases?
+## How does destructuring work in javascript, and what are its use cases?
 
 When you're writing code in JavaScript, you might have to deal with how things happen in the background—which is called "asynchronous" behavior. JavaScript uses something called an **event loop** to manage how and when different parts of code get executed. The event loop decides the order in which things happen, and here is where we meet two important types of tasks: **microtasks** and **macrotasks**. Let’s explore the differences between them!
 
