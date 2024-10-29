@@ -56,6 +56,7 @@ In writing the answers I was helped by AI and the book "JavaScript: The Definiti
 |38. [What is IndexedDB?](#what-is-indexeddb?)|
 |39. [What is a module?](#what-is-a-module?)|
 |40. [What is a Web API?](#what-is-a-web-api?)|
+|41. [What is Hydration?](#what-is-hydration?)|
 
 ---
 
@@ -2732,6 +2733,39 @@ There are different types of web APIs, including:
 4. **JSON-RPC and XML-RPC APIs**: These are remote procedure call (RPC) protocols that allow clients to invoke methods or procedures on remote servers and receive the results over HTTP. JSON-RPC uses JSON as the data format, while XML-RPC uses XML.
 
 Web APIs are commonly used for various purposes, such as accessing data from external sources (e.g., social media platforms, weather services), integrating with third-party services, building client-server architectures, and enabling communication between different components of a distributed system. They play a crucial role in enabling interoperability and building interconnected applications in the modern web ecosystem.
+
+<div align="right">
+
+[back to Questions](#questions)
+
+</div>
+
+---
+
+<a name="what-is-hydration?"></a>
+
+## 41. What is Hydration?
+
+Hydration is the process of activating server-rendered HTML by adding JavaScript behavior, which makes the page interactive, enabling actions like button clicks, form submissions, and other user interactions. Without hydration, server-rendered web pages remain static.
+
+**In Server-Side Rendering (SSR)**, the server sends a fully-formed HTML document to the client, but this document initially lacks interactivity. Hydration steps in to add interactivity: once the JavaScript bundle is downloaded, it attaches event listeners to elements on the page, transforming static content into a dynamic user experience.
+
+**Client-Side Rendering (CSR)**, on the other hand, doesn’t need hydration. Here, the JavaScript bundle handles HTML creation and manipulation directly in the browser, meaning that all interactivity is included from the start.
+
+Hydration is a crucial part of SSR, making it possible to deliver fast, interactive web applications that work across a range of devices and browsers.
+
+Here's the general order of events for hydration:
+1. **Server Renders HTML**: The server generates and sends the HTML to the client. This step is what users first see when they load the page. The server-rendered HTML displays the basic content and layout but without any interactivity.
+
+2. **Client Receives HTML**: The browser receives and starts displaying this HTML as soon as it arrives, allowing users to see the page quickly even if it’s not interactive yet.
+
+3. **Download JavaScript** Bundle: While the HTML is being displayed, the browser downloads the JavaScript bundle needed to add functionality.
+
+4. **Hydration Begins**: Once the JavaScript is downloaded, the hydration process begins. The JavaScript runs on the client and attaches event listeners and interactive logic to the existing HTML elements, making the page fully functional.
+
+5. **Interactive Page**: After hydration, the page becomes interactive, allowing users to click, type, and interact with elements.
+
+In short, HTML rendering is indeed the first step, followed by the JavaScript download and hydration. This order ensures a fast initial display of content, which is why SSR with hydration is popular for performance and SEO.
 
 <div align="right">
 
