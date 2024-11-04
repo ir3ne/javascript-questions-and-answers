@@ -57,6 +57,8 @@ In writing the answers I was helped by AI and the book "JavaScript: The Definiti
 |39. [What is a module?](#what-is-a-module?)|
 |40. [What is a Web API?](#what-is-a-web-api?)|
 |41. [What is Hydration?](#what-is-hydration?)|
+|42. [What are Concurrency and Parallelism?](#What-are-Concurrency-and-Parallelism?)|
+|43. [What is a shallow copy?](#what-is-a-shallow-copy?)|
 
 ---
 
