@@ -2774,3 +2774,104 @@ In short, HTML rendering is indeed the first step, followed by the JavaScript do
 </div>
 
 ---
+
+<a name="What-are-Concurrency-and-Parallelism?"></a>
+
+# Concurrency and Parallelism in JavaScript
+
+In JavaScript, concurrency and parallelism both enable handling multiple tasks but have different approaches.
+
+## 1. Concurrency
+
+Concurrency allows tasks to appear to run simultaneously, but they're actually taking turns on a single processor. JavaScript, being single-threaded, handles concurrency using its event loop and asynchronous functions.
+
+### Example: Handling Tasks Concurrently
+
+```javascript
+function asyncTask1() { 
+    return new Promise((resolve) => setTimeout(() => resolve("Task 1 done"), 1000)); 
+}
+
+function asyncTask2() { 
+    return new Promise((resolve) => setTimeout(() => resolve("Task 2 done"), 500)); 
+}
+
+async function handleTasksConcurrently() { 
+    const task1 = asyncTask1(); 
+    const task2 = asyncTask2(); 
+    const results = await Promise.all([task1, task2]); 
+    console.log(results); 
+} 
+
+handleTasksConcurrently(); 
+```
+
+## 2. Parallelism in JavaScript
+
+While JavaScript's default execution model is single-threaded, parallelism can be introduced by using **Web Workers**. Here’s how it works:
+
+## 1. Web Workers
+
+**Overview**: Web Workers allow you to run scripts in background threads. They can perform computations without interfering with the user interface or the main thread, enabling parallel execution of tasks.
+
+**How It Works**: You create a worker using the `Worker` constructor, and the worker runs in its own context. Communication between the main thread and the worker happens through message passing.
+
+### Example: Using Web Workers for Parallelism
+
+**Main Script (main.js)**:
+```javascript
+ Create a new worker
+const worker = new Worker('worker.js');
+
+ Handle messages received from the worker
+worker.onmessage = function(event) {
+    console.log('Result from worker:', event.data);
+};
+
+Start the worker with an initial message
+worker.postMessage('Start computation');
+```
+
+<div align="right">
+
+[back to Questions](#questions)
+
+</div>
+
+---
+
+<a name="What-is-a-shallow-copy?"></a>
+
+# What is a Shallow Copy?
+
+A **shallow copy** is a duplicate of an object where the top-level properties are copied, but the nested objects or arrays are shared between the original and the copy. This means that if you modify a nested object in the copy, the change will also affect the original object, since both reference the same nested object.
+
+## Shallow Copy in JavaScript
+
+In JavaScript, you can create a shallow copy of an object using several methods. Here are a few common techniques:
+
+### 1. Using `Object.assign()`
+```javascript
+const original = {
+    name: "Alice",
+    age: 25,
+    address: {
+        city: "Wonderland",
+        zip: "12345"
+    }
+};
+
+const shallowCopy = Object.assign({}, original);
+
+shallowCopy.address.city = "New City";
+
+console.log(original.address.city); 
+```
+
+<div align="right">
+
+[back to Questions](#questions)
+
+</div>
+
+---
