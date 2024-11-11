@@ -57,7 +57,7 @@ In writing the answers I was helped by AI and the book "JavaScript: The Definiti
 |39. [What is a module?](#what-is-a-module?)|
 |40. [What is a Web API?](#what-is-a-web-api?)|
 |41. [What is Hydration?](#what-is-hydration?)|
-|42. [What are Concurrency and Parallelism?](#What-are-Concurrency-and-Parallelism?)|
+|42. [What are Concurrency and Parallelism?](#what-are-concurrency-and-parallelism?)|
 |43. [What is a shallow copy?](#what-is-a-shallow-copy?)|
 
 ---
@@ -2777,9 +2777,9 @@ In short, HTML rendering is indeed the first step, followed by the JavaScript do
 
 ---
 
-<a name="What-are-Concurrency-and-Parallelism?"></a>
+<a name="What-are-concurrency-and-parallelism?"></a>
 
-# Concurrency and Parallelism in JavaScript
+## 42. Concurrency and Parallelism in JavaScript
 
 In JavaScript, concurrency and parallelism both enable handling multiple tasks but have different approaches.
 
@@ -2842,13 +2842,11 @@ worker.postMessage('Start computation');
 
 ---
 
-<a name="What-is-a-shallow-copy?"></a>
+<a name="what-is-a-shallow-copy?"></a>
 
-# What is a Shallow Copy?
+## 43. What is a Shallow Copy?
 
 A **shallow copy** is a duplicate of an object where the top-level properties are copied, but the nested objects or arrays are shared between the original and the copy. This means that if you modify a nested object in the copy, the change will also affect the original object, since both reference the same nested object.
-
-## Shallow Copy in JavaScript
 
 In JavaScript, you can create a shallow copy of an object using several methods. Here are a few common techniques:
 
